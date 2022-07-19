@@ -1,0 +1,93 @@
+/* 
+Common CSS
+*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{border-top: 5px solid #76c38f;}
+p{color: #979797; line-height: 1.5em; font-size: 14px;}
+h1,h2,h3,h4,h5,h6{margin: 0; color: #333333; line-height: 1.2em;}
+.common_container{width: 100%; max-width: 1100px; margin: 0 auto;}
+a{transition: all 0.4s ease-in-out; text-decoration: none;}
+/* html{overflow-x: hidden;} */
+/* body{overflow-x: hidden;} */
+/*
+  Top Header Area CSS 
+*/
+#header_area{width: 100%; height: 85vh; background: #290000;}
+.inner_header{display: flex; justify-content: space-between; padding: 40px 0;}
+.inner_header .logo_Area{width: 20%;}
+.inner_header .logo_Area img{width: 190px;}
+.inner_header .navigation_area{width: 80%;}
+.inner_header .navigation_area nav{text-align: right;}
+.inner_header .navigation_area nav ul{margin: 0; padding: 0; list-style: none;}
+.inner_header .navigation_area nav ul li{display: inline-block; margin-left: 15px;}
+.inner_header .navigation_area nav ul li a{color: #ffffff; display: block; padding: 10px 14px;}
+.inner_header .navigation_area nav ul li a:hover{background: #76c38f; border-radius: 12px;}
+/*
+  Banner Header Area CSS 
+*/
+.banner_header_area{padding: 20px 0;}
+.banner_header_area .inner_banner{display: flex; justify-content: space-between;}
+.banner_header_area .inner_banner .left_banner{flex-basis: 40%; padding: 70px 50px;}
+.banner_header_area .inner_banner .left_banner h1{color: #ffffff; font-size: 46px;}
+.banner_header_area .inner_banner .left_banner p{ font-size: 15px; padding: 10px 0;}
+.banner_header_area .inner_banner .left_banner a{display: inline-block; background: #76c38f; padding: 12px 20px; margin: 10px 0; color: #fff; font-size: 16px; border-radius: 10px;}
+.banner_header_area .inner_banner .left_banner a:hover{background: #2fca60;}
+.banner_header_area .inner_banner .right_banner{ padding-right: 60px;}
+.banner_header_area .inner_banner .right_banner .image_area{ width: 435px; height: 435px;}
+.banner_header_area .inner_banner .right_banner .image_area img{width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 10px solid #6b6b6b;}
+.banner_header_area .inner_banner .right_banner .image_area img{width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 25px solid #6b6b6b;}
+/*
+  Service Area CSS 
+*/
+#service_area{padding: 50px; background:  #660000;}
+#service_area .inner_service{display: grid;  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 30px;}
+#service_area .inner_service .service_item {padding: 30px; background: #fff; cursor: pointer;}
+#service_area .inner_service .service_item img{width: 120px; display: block; margin: 0 auto;}
+#service_area .inner_service .service_item h1{color: #333333; font-size: 32px; text-align: center; margin: 10px 0;}
+#service_area .inner_service .service_item p{text-align: center;}
+#service_area .inner_service .service_item:hover{background: #76c38f; transition: all 0.3s ease-in-out;}
+#service_area .inner_service .service_item:hover p{color: #fff;}
+#service_area .inner_service .service_item:hover h1{color: #fff;}
+/* 
+  Work Area Btn CSS
+*/
+.work_btn{text-align: center; position: relative;}
+.work_btn a{text-align: center; margin-top: 40px; display: inline-block; background: #303030; padding: 12px 25px; font-size: 32px; color: #fff; border-radius: 12px;}
+.work_btn a::before {position: absolute;content: '';background-color: #333333;display: block;width: 37%;height: 5px;left: 7px;top: 68px;}
+.work_btn a::after {position: absolute;content: '';background-color: #333333;display: block;width: 37%;height: 5px;right: 7px;top: 68px;}
+.work_btn a:hover{ background: #fff; color: #333333;}
+/* 
+  Work Area CSS
+*/
+.work_area_container{padding: 50px 0; display: grid; grid-gap: 30px;   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+.work_area_container .work_item{position: relative; border: 5px solid #fff; cursor: pointer; transition: all 0.4s ease-in-out;}
+.work_area_container .work_item img{width: 100%; height: 100%; object-fit: cover;}
+.work_area_container .work_text {position: absolute; bottom: 0; text-align: center; background: #151515; display: block; width: 100%; padding: 8px; transition: 0.4s;}
+.work_area_container .work_text p{color: #fff; font-size: 16px;}
+.work_area_container .work_item:hover{border: 5px solid #76c38f;}
+.work_area_container .work_item:hover .work_text{display: none;}
+/* 
+  Footer Area CSS
+*/
+#footer_area{ background: #303030;}
+#footer_area .footer_container{display: grid; grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));grid-column-gap: 10px; padding: 50px 0;}
+#footer_area .footer_container .footer_item{padding: 10px;}
+#footer_area .footer_container .footer_item h3{font-size: 18px; font-weight: normal; color: #fff; margin-bottom: 20px;}
+#footer_area .footer_container .footer_item h4 a{font-size: 16px; font-weight: normal; color: #76c38f;}
+#footer_area .footer_container .footer_item p{color: #979797; margin-top: 10px; padding: 0 0 5px 0;}
+#footer_area .footer_container .footer_item p a{color: #76c38f;}
+#footer_area .footer_container .footer_item a{color: #76c38f;}
+#footer_area .footer_container .footer_item a:hover{color: #10e052;}
+#footer_area .footer_container .footer_item ul{margin: 0; padding: 0; list-style: none;}
+#footer_area .footer_container .footer_item ul li{display: block; margin: 5px 0; border-bottom: 1px solid #555353;}
+#footer_area .footer_container .footer_item ul li a{display: block; padding: 7px 0; font-size: 15px;}
+#footer_area .footer_container .footer_item ul li a:hover{color: #10e052;}
+#footer_area .footer_container .footer_item form{display: block;}
+#footer_area .footer_container .footer_item form input{width: 100%; border: none; margin: 5px 0; padding: 8px; font-size: 15px; background: #222222; color: #979797; border-radius: 5px; outline: none;}
+#footer_area .footer_container .footer_item form textarea{width: 100%; margin: 5px 0; padding: 12px; resize: none; background: #222222; border: none; color: #979797; outline: none; min-height: 100px; border-radius: 5px;font-size: 16px;}
+#footer_area .footer_container .footer_item form input[type='submit']{width: 100px; padding: 10px; color: #222222; background: #76c38f; margin: 5px 0; display: inline-block; cursor: pointer; transition: 0.4s ease-in-out;}
+#footer_area .footer_container .footer_item form input[type='submit']:hover{background: #10e052;}
+
+
+#copyright_area{background: #2b2b2b; padding: 18px 0;border-top: 1px solid #222222;}
+#copyright_area .inner_copyright_area{display: flex; justify-content: space-between; padding: 0 20px;}
